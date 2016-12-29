@@ -8,28 +8,23 @@ package co.yega.calc;
  */
 public class Calculadora {
 
-    
-    
-//    /**
-//     * @param args the command line arguments
-//     */
-//    public static void main(String[] args) {
-//        // TODO code application logic here
-//    }
     public int sumar(int x, int y){
-        return 0;
+        return x+y;
     }
     
     public int restar(int x, int y){
-        return 0;
+        return x-y;
     }
     
     public int multiplicar(int x, int y){
-        return 0;
+        return x*y;
     }
     
     public int dividir(int x, int y){
-        return 0;
+        if (y==0) {
+            throw new ArithmeticException("División por cero");
+        }
+        return x/y;
     }
     
 }
