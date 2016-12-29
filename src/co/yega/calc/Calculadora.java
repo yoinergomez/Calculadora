@@ -2,7 +2,7 @@ package co.yega.calc;
 
 /**
  * Puede realizar las operaciones de suma, resta, multiplicación y división
- * a partir de una cadena de caracteres donde los operandos son números enteros
+ * donde los operandos son números enteros
  * @version 1.0.0
  * @author Yoiner Esteban Gómez Ayala - yoiner.gomez22@gmail.com
  */
