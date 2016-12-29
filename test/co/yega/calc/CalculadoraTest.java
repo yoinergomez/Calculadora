@@ -23,25 +23,6 @@ public class CalculadoraTest {
         System.out.println("Constructor");
     }
     
-    @BeforeClass
-    public static void setUpClass() {
-         System.out.println("BeforeClass");
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-        System.out.println("AfterClass");
-    }
-    
-    @Before
-    public void setUp() {
-        System.out.println("Before");
-    }
-    
-    @After
-    public void tearDown() {
-        System.out.println("After");
-    }
 
     /**
      * Test of sumar method, of class Calculadora.
