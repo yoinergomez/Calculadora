@@ -34,6 +34,19 @@ public class CalculadoraTest {
         int result = calc.sumar(x, y);
         assertEquals(expResult, result);
     }
+    
+    /**
+     * Test of sumar anulación de signo method, of class Calculadora.
+     */
+    @Test
+    public void testSumarAnulacionSigno() {
+        System.out.println("sumar anulación de signo");
+        int x = 6;
+        int y = -2;
+        int expResult = 4;
+        int result = calc.sumar(x, y);
+        assertEquals(expResult, result);
+    }
 
     /**
      * Test of restar method, of class Calculadora.
@@ -44,6 +57,19 @@ public class CalculadoraTest {
         int x = 6;
         int y = 2;
         int expResult = 4;
+        int result = calc.restar(x, y);
+        assertEquals(expResult, result);
+    }
+    
+    /**
+     * Test of restar anulación de signo method, of class Calculadora.
+     */
+    @Test
+    public void testRestarAnulacionSigno() {
+        System.out.println("restar anulación de signo");
+        int x = 6;
+        int y = -2;
+        int expResult = 8;
         int result = calc.restar(x, y);
         assertEquals(expResult, result);
     }
@@ -70,6 +96,30 @@ public class CalculadoraTest {
         int x = 8;
         int y = 2;
         int expResult = 4;
+        int result = calc.dividir(x, y);
+        assertEquals(expResult, result);
+    }
+    
+    /**
+     * Test of dividir por cero method, of class Calculadora.
+     */
+    @Test (expected=ArithmeticException.class)
+    public void testDividirPorCero() {
+        System.out.println("dividir por cero");
+        int x = 8;
+        int y = 0;
+        calc.dividir(x, y);
+    }
+    
+    /**
+     * Test of dividir numerador igual a cero method, of class Calculadora.
+     */
+    @Test
+    public void testDividirNumeradorCero() {
+        System.out.println("dividir numerador cero");
+        int x = 0;
+        int y = 2;
+        int expResult = 0;
         int result = calc.dividir(x, y);
         assertEquals(expResult, result);
     }
