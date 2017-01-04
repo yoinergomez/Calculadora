@@ -1,7 +1,7 @@
 language: java
 
 install:
-  - pip install coveralls
+  - sudo pip install coveralls
 
 jdk:
   - oraclejdk8
