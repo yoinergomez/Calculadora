@@ -10,4 +10,4 @@ jdk:
   - openjdk6
 
 after_success:
-  - coveralls
+  - mvn clean test jacoco:report coveralls:report
