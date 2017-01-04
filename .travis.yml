@@ -1,7 +1,7 @@
 language: java
 
 install:
-  - pip install requests[security]
+  - sudo pip install requests[security]
   - sudo pip install coveralls
 
 jdk:
